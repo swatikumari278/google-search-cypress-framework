@@ -1,5 +1,5 @@
 import { verifySearchItem } from "../utilities/helpers/search-helpers"
-describe('template spec', {tags: "smoke"}, () => {
+describe('template spec', { tags: "smoke" }, () => {
 
   before(() => {
 
@@ -21,7 +21,7 @@ describe('template spec', {tags: "smoke"}, () => {
   })
   it('Should verify search functionality works on Google Page', () => {
     cy.fixture('search-item').then((search) => {
-    //  cy.searchElementOnSearchPage(search.searchItem)
+      cy.searchElementOnSearchPage(search.searchItem)
     })
     verifySearchItem()
   })

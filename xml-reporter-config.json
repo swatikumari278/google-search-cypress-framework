@@ -1,0 +1,10 @@
+{
+    "reporterEnabled": "spec, mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+        "mochaFile": "cypress/results/split-results/results-[hash].xml",
+        "testCaseSwitchClassnameAndName": true,
+        "testsuitesTitle": true,
+        "suiteTitleSeparatedBy": " -- ",
+        "includePending": true
+    }
+}
